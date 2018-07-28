@@ -9,7 +9,7 @@
     "clean": "rimraf dist",
     "dev": "yarn run clean && webpack-dev-server",
     "build": "yarn run clean && webpack",
-    "deploy": "yarn run build && surge ./dist"
+    "deploy": "yarn run build && surge ./dist --domain nick-shmyrev.surge.sh"
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
