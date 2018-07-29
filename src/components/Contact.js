@@ -3,10 +3,10 @@ import React from 'react';
 import LinkedinBadge from './LinkedinBadge';
 
 const Contact = () => (
-  <div>
+  <main>
     <h2>Contact Me Page component</h2>
     <LinkedinBadge/>
-  </div>
+  </main>
 );
 
 export default Contact;

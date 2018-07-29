@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Portfolio = () => (
-  <div>
+  <main>
     <h2>Examples of My Work Page component</h2>
-  </div>
+  </main>
 );
 
 export default Portfolio;
