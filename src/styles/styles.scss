@@ -4,27 +4,69 @@
 @import "base/variables";
 
 // Import component styles
-
+@import "components/Header";
+@import "components/Home";
+@import "components/About";
+@import "components/Portfolio";
+@import "components/Contact";
+@import "components/Footer";
 
 // Global styles
-html {
-  font-size: 62.5%;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: $m-size;
-}
-
-button {
-  cursor: pointer;
-  transition: all .35s;
-
-  &:disabled {
-    cursor: default;
+  @include bgMixin;
+  background-color: $primary-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  line-height: 1.5;
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba($primary-color, $bg-opacity);
   }
 }
 
-.navlink-active {
-  color: red;
+main {
+  padding: 4rem;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.lg-heading {
+  font-size: 6rem;
+}
+
+.sm-heading {
+  margin-bottom: 2rem;
+  padding: .2rem 1rem;
+  background-color: rgba(lighten($primary-color, 2), .5);
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  
+  &:hover {
+    color: $secondary-color;
+    @include easeOut;
+  }
 }

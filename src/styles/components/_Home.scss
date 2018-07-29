@@ -1,0 +1,20 @@
+#home {
+  overflow: hidden;
+  
+  h1 {
+    margin-top: 20vh;
+  }
+  
+  .icons {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    
+    
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}

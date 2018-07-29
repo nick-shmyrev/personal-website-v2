@@ -1,9 +1,23 @@
 // Colors
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-bg-image: true;
+$home-bg-image: url('/../../img/background.jpg');
+$bg-opacity: .9;
 
 // Sizes
-$s-size: 1rem;
-$m-size: 1.6rem;
-$l-size: 3.2rem;
-$xl-size: 4.8rem;
+
+// Mixins
+@mixin easeOut {
+  transition: color .25s ease-out;
+}
+@mixin bgMixin {
+  @if $show-home-bg-image {
+    background: $home-bg-image;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 // Styles
