@@ -22,7 +22,7 @@ const AppRouter = () => (
         <Route path="/about" component={AboutPage}/>
         <Route path="/portfolio" component={PortfolioPage}/>
         <Route path="/contact" component={ContactPage}/>
-        <Redirect to={HomePage}/>
+        <Redirect to="/"/>
       </Switch>
       <Footer/>
     </div>
