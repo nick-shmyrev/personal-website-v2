@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import './styles/styles.scss';
 
@@ -11,7 +11,6 @@ import AboutPage from './components/About';
 import PortfolioPage from './components/Portfolio';
 import ContactPage from './components/Contact';
 import Footer from './components/Footer';
-import err404Page from './components/Err404Page';
 
 
 const AppRouter = () => (
@@ -23,7 +22,7 @@ const AppRouter = () => (
         <Route path="/about" component={AboutPage}/>
         <Route path="/portfolio" component={PortfolioPage}/>
         <Route path="/contact" component={ContactPage}/>
-        <Route component={err404Page}/>
+        <Redirect to={HomePage}/>
       </Switch>
       <Footer/>
     </div>
