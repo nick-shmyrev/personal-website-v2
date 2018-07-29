@@ -4,45 +4,115 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+  @include easeOut;
   
-  .menu-btn {
-    position: absolute;
-    z-index: 3;
-    right: 2rem;
-    top: 2rem;
-    cursor: pointer;
+  .btn-line {
+    background-color: #fff;
+    height: .2rem;
+    width: 2rem;
+    margin-bottom: .3rem;
     @include easeOut;
-    
-    .btn-line {
-      background-color: #fff;
-      height: .2rem;
-      width: 2rem;
-      margin-bottom: .3rem;
-      @include easeOut;
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
+  
+  &.close {
+    transform: rotate(180deg);
     
-    &.close {
-      transform: rotate(180deg);
-      
-      & .btn-line {
-        &:first-child {
-          transform: rotate(45deg) translate(5px, 5px);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          transform: rotate(-45deg) translate(7px, -6px);
-        }
+    & .btn-line {
+      &:first-child {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: rotate(-45deg) translate(7px, -6px);
       }
     }
   }
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  display: flex;
+  &.show {
+    visibility: visible;
+  }
+}
+.menu-nav,
+.menu-branding {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+.menu-branding {
+  background: rgba($primary-color, $bg-opacity);
+  transform: translateY(100%);
+  @include easeOut;
+  &.show {
+    transform: translateY(0);
+  }
+  & .portrait {
+    background-image: url(../img/avatar.jpeg); // Path is relative to main .scss file
+    background-size: cover;
+    border: .2rem solid $secondary-color;
+    opacity: 100%;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: rgba(darken($primary-color, 5), $bg-opacity);
+  list-style: none;
+  transform: translateY(-100%);
+  @include easeOut;
+  &.show {
+    transform: translateY(0);
+  }
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 0;
+  transform: translateX(600px);
+  @include easeOut;
+  &.show {
+    transform: translateX(0);
+  }
+}
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
 
 .nav-link--active {
   color: $secondary-color;
+  cursor: default;
+  text-decoration: underline;
 }
