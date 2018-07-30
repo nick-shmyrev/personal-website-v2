@@ -71,3 +71,26 @@ a {
     @include easeOut;
   }
 }
+
+
+@include mediaMD {
+  main {
+    align-items: center;
+    text-align: center;
+    padding: 4vw;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .lg-heading {
+    //font-size: 12vw;
+  }
+}
+
+@include mediaSM {
+  .lg-heading {
+    font-size: 16vw;
+  }
+}

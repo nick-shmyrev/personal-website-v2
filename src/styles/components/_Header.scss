@@ -1,5 +1,3 @@
-@import "../base/variables";
-
 header {
   position: fixed;
   z-index: 2;
@@ -73,7 +71,7 @@ header {
   & .portrait {
     background-image: url(../img/avatar.jpeg); // Path is relative to main .scss file
     background-size: cover;
-    border: .2rem solid $secondary-color;
+    border: .3rem solid $secondary-color;
     opacity: 100%;
     border-radius: 100%;
     width: 15rem;
@@ -94,6 +92,7 @@ header {
 
 .nav-item {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
@@ -115,4 +114,31 @@ header {
   color: $secondary-color;
   cursor: default;
   text-decoration: underline;
+}
+
+@include mediaSM {
+  .menu {
+    flex-direction: column;
+  }
+  .menu-branding {
+    width: 100%;
+    height: 30vh;
+    transform: translateX(-100%);
+    &.show {
+      transform: translateX(0);
+    }
+    
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .menu-nav {
+    width: 100%;
+    height: 70vh;
+    transform: translateX(100%);
+    &.show {
+      transform: translateX(0);
+    }
+  }
 }
