@@ -29,16 +29,45 @@ class Header extends Component {
       
           <ul className={`menu-nav ${this.state.showMenu ? 'show' : ''}`}>
             <li className={`nav-item ${this.state.showMenu ? 'show' : ''}`}>
-              <NavLink exact to="/" className="nav-link" activeClassName="nav-link--active">Home</NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="nav-link"
+                activeClassName="nav-link--active"
+                onClick={this.toggleMenu}
+              >
+                Home
+              </NavLink>
             </li>
             <li className={`nav-item ${this.state.showMenu ? 'show' : ''}`}>
-              <NavLink to="/about" className="nav-link" activeClassName="nav-link--active">About Me</NavLink>
+              <NavLink
+                to="/about"
+                className="nav-link"
+                activeClassName="nav-link--active"
+                onClick={this.toggleMenu}
+              >
+                About Me
+              </NavLink>
             </li>
             <li className={`nav-item ${this.state.showMenu ? 'show' : ''}`}>
-              <NavLink to="/portfolio" className="nav-link" activeClassName="nav-link--active">Examples of My Work</NavLink>
+              <NavLink
+                to="/portfolio"
+                className="nav-link"
+                activeClassName="nav-link--active"
+                onClick={this.toggleMenu}
+              >
+                Examples of My Work
+              </NavLink>
             </li>
             <li className={`nav-item ${this.state.showMenu ? 'show' : ''}`}>
-              <NavLink to="/contact" className="nav-link" activeClassName="nav-link--active">Contact Me</NavLink>
+              <NavLink
+                to="/contact"
+                className="nav-link"
+                activeClassName="nav-link--active"
+                onClick={this.toggleMenu}
+              >
+                Contact Me
+              </NavLink>
             </li>
           </ul>
         </nav>
