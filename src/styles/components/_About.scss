@@ -1,0 +1,54 @@
+#about {
+  overflow: hidden;
+}
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+      'bio-image bio bio'
+      'job job job';
+  grid-template-columns: repeat(3, 1fr);
+}
+.bio-image {
+  grid-area: bio-image;
+  margin: auto;
+  border-radius: 50%;
+  border: .3rem solid $secondary-color;
+}
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+.job {
+  background-color: lighten($primary-color, 5);
+  padding: 1rem;
+  border-bottom: .3rem solid $secondary-color;
+  text-align: left;
+  
+  .job-title {
+    color: darken($secondary-color, 5);
+  }
+  .job-company-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .job-company-row > *:first-child {
+    margin-right: 10px;
+  }
+}
+
+@include mediaLG {
+  .job {
+    grid-column: 1 / 4;
+  }
+}
+
+@include mediaMD {
+  .about-info {
+    grid-template-areas:
+        'bio-image'
+        'bio'
+        'job';
+    grid-template-columns: 1fr;
+  }
+}
