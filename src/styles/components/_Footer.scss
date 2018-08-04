@@ -2,6 +2,7 @@ footer {
   background: darken($primary-color, 10);
   padding: 1rem;
   z-index: 5;
+  color: setContrastingColor($primary-color);
   text-align: center;
   font-size: .75rem;
   height: $footer-height;
