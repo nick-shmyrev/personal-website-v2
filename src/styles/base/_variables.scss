@@ -20,6 +20,16 @@ $bg-opacity: .9;
   }
 }
 
+// Font Color Function
+@function setContrastingColor($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  }
+  @else {
+    @return #fff;
+  }
+}
+
 // Media Queries
 @mixin mediaSM {
   @media screen and (max-width: 500px) {
