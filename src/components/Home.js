@@ -9,13 +9,13 @@ const Home = () => (
     
     <div className="social-icons">
       <a href="https://www.linkedin.com/in/nickshmyrev/" target="_blank" rel="noopener noreferrer" className="icons">
-        <FontAwesomeIcon icon={faLinkedin} className="fa-2x"/>
+        <FontAwesomeIcon icon={faLinkedin} className="fa-3x fa-fw"/>
       </a>
       <a href="https://gitlab.com/nick-shmyrev" target="_blank" rel="noopener noreferrer" className="icons">
-        <FontAwesomeIcon icon={faGitlab} className="fa-2x"/>
+        <FontAwesomeIcon icon={faGitlab} className="fa-3x fa-fw"/>
       </a>
       <a href="https://github.com/nick-shmyrev" target="_blank" rel="noopener noreferrer" className="icons">
-        <FontAwesomeIcon icon={faGithub} className="fa-2x"/>
+        <FontAwesomeIcon icon={faGithub} className="fa-3x fa-fw"/>
       </a>
     </div>
   </main>
