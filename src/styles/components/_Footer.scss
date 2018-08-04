@@ -1,16 +1,12 @@
 footer {
-  text-align: center;
-  padding: 1rem;
   background: darken($primary-color, 10);
-  color: #fff;
-  height: 60px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1rem;
   z-index: 5;
-  
-  & a {
-    text-decoration: underline;
-  }
+  text-align: center;
+  color: #fff;
+  font-size: .75rem;
 }
