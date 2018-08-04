@@ -66,19 +66,18 @@ a {
   main {
     align-items: center;
     text-align: center;
-    padding: 4vw;
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
+    padding: 5rem 4.5rem 4rem;
   }
-  
   .lg-heading {
-    //font-size: 12vw;
+    line-height: 1;
+    margin-bottom: 1rem;
   }
 }
 
 @include mediaSM {
+  main {
+    padding: 5rem 4vw 4rem;
+  }
   .lg-heading {
     font-size: 16vw;
   }
