@@ -2,7 +2,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-bg-image: true;
-$home-bg-image: url('../img/background.jpg'); // This path would be used from the main style file, so it needs to be relative to that file
+$home-bg-image: url('/img/background.jpg');
 $bg-opacity: .9;
 
 // Sizes

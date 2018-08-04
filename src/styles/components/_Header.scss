@@ -69,7 +69,7 @@ header {
     transform: translateY(0);
   }
   & .portrait {
-    background-image: url(../img/avatar.jpeg); // Path is relative to main .scss file
+    background-image: url(/img/avatar.jpeg);
     background-size: cover;
     border: .3rem solid $secondary-color;
     opacity: 100%;
