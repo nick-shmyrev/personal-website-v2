@@ -13,7 +13,7 @@ header {
   @include easeOut;
   
   .btn-line {
-    background-color: #fff;
+    background-color: setContrastingColor($primary-color);
     height: .2rem;
     width: 2rem;
     margin-bottom: .3rem;
@@ -97,7 +97,7 @@ header {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
-  color: #fff;
+  color: setContrastingColor($primary-color);
   text-decoration: none;
   padding: 1rem 0;
   transform: translateX(600px);

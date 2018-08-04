@@ -20,7 +20,7 @@ body {
   @include bgMixin;
   background-color: $primary-color;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: setContrastingColor($primary-color);
   margin: 0;
   line-height: 1.5;
   
@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #fff;
+  color: setContrastingColor($primary-color);
   text-decoration: none;
   
   &:hover {
