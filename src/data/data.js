@@ -23,31 +23,31 @@ const data = {
   projects: [
     {
       name: 'Sedona',
-      img: '/img/portfolio-images/project1.jpg',
+      img: require('../img/portfolio-images/project1.jpg'),
       url: 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/Nick-Shmyrev/sedona/master/index.html',
       git: 'https://github.com/nick-shmyrev/sedona',
     },
     {
       name: 'Indecision',
-      img: '/img/portfolio-images/project2.jpg',
+      img: require('../img/portfolio-images/project2.jpg'),
       url: 'http://handsome-underwear.surge.sh/',
       git: 'https://github.com/nick-shmyrev/indecision-app',
     },
     {
       name: 'Barbershop',
-      img: '/img/portfolio-images/project3.jpg',
+      img: require('../img/portfolio-images/project3.jpg'),
       url: 'https://htmlpreview.github.io/?https://github.com/Nick-Shmyrev/22749-barbershop/blob/master/index.html',
       git: 'https://github.com/nick-shmyrev/22749-barbershop',
     },
     {
       name: 'Portfolio',
-      img: '/img/portfolio-images/project4.jpg',
-      url: 'nick-shmyrev.surge.sh',
+      img: require('../img/portfolio-images/project4.jpg'),
+      url: 'https://nick-shmyrev.surge.sh',
       git: 'https://github.com/nick-shmyrev/personal-website-v2',
     },
     {
       name: 'Placeholder',
-      img: '/img/portfolio-images/project5.jpg',
+      img: require('../img/portfolio-images/project5.jpg'),
       url: '',
       git: '',
     },
