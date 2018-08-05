@@ -20,11 +20,8 @@
   display: block;
   padding: .5rem 1rem;
   margin-bottom: .3rem;
+  @include easeOut;
   
-  &:hover {
-    color: setContrastingColor($secondary-color);
-    background-color: $secondary-color;
-  }
   &.btn-light {
     color: #333;
     background-color: lighten($primary-color, 50);
@@ -32,6 +29,10 @@
   &.btn-dark {
     color: #fff;
     background-color: darken($primary-color, 50);
+  }
+  &:hover {
+    color: setContrastingColor($secondary-color);
+    background-color: $secondary-color;
   }
 }
 
