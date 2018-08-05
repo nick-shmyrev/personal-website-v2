@@ -20,6 +20,38 @@ const data = {
       description: 'Created new and updated existing landing and product pages using HTML, CSS, JavaScript and Bitrix CMS. Prepared product images for publication using Adobe Photoshop and Illustrator. Wrote product descriptions and reviews.',
     },
   ],
+  projects: [
+    {
+      name: 'Sedona',
+      img: '/img/portfolio-images/project1.jpg',
+      url: 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/Nick-Shmyrev/sedona/master/index.html',
+      git: 'https://github.com/nick-shmyrev/sedona',
+    },
+    {
+      name: 'Indecision',
+      img: '/img/portfolio-images/project2.jpg',
+      url: 'http://handsome-underwear.surge.sh/',
+      git: 'https://github.com/nick-shmyrev/indecision-app',
+    },
+    {
+      name: 'Barbershop',
+      img: '/img/portfolio-images/project3.jpg',
+      url: 'https://htmlpreview.github.io/?https://github.com/Nick-Shmyrev/22749-barbershop/blob/master/index.html',
+      git: 'https://github.com/nick-shmyrev/22749-barbershop',
+    },
+    {
+      name: 'Portfolio',
+      img: '/img/portfolio-images/project4.jpg',
+      url: 'nick-shmyrev.surge.sh',
+      git: 'https://github.com/nick-shmyrev/personal-website-v2',
+    },
+    {
+      name: 'Placeholder',
+      img: '/img/portfolio-images/project5.jpg',
+      url: '',
+      git: '',
+    },
+  ],
 };
 
 export default data;
