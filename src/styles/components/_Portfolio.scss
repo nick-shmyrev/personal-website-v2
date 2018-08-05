@@ -1,0 +1,52 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .7rem;
+  
+  img {
+    width: 100%;
+    border: .2rem solid setContrastingColor($primary-color);
+    background-color: setContrastingColor($primary-color);
+    @include easeOut;
+    
+    &:hover {
+      opacity: .8;
+      border-color: $secondary-color;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  padding: .5rem 1rem;
+  margin-bottom: .3rem;
+  
+  &:hover {
+    color: setContrastingColor($secondary-color);
+    background-color: $secondary-color;
+  }
+  &.btn-light {
+    color: #333;
+    background-color: lighten($primary-color, 50);
+  }
+  &.btn-dark {
+    color: #fff;
+    background-color: darken($primary-color, 50);
+  }
+}
+
+@include mediaLG {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@include mediaMD {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include mediaSM {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

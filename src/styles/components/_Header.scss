@@ -70,7 +70,7 @@ header {
     transform: translateY(-100%);
   }
   & .portrait {
-    background-image: url(/img/avatar.jpeg);
+    background-image: url(../img/avatar.jpeg);
     background-size: cover;
     border: .3rem solid $secondary-color;
     opacity: 100%;
