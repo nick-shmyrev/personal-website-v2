@@ -2,7 +2,7 @@ import React from 'react';
 import uuid from 'uuid/v4';
 
 import data from '../data/data';
-import JobComponent from './JobComponent';
+import AboutJob from './AboutJob';
 
 const About = () => {
   const state = { jobs: data.jobs };
@@ -12,7 +12,7 @@ const About = () => {
       <h2 className="sm-heading">A few things about me...</h2>
     
       <div className="about-info">
-        <img src="/img/avatar.jpeg" alt="Nick Shmyrev" className="bio-image"/>
+        <img src="../img/avatar.jpeg" alt="Nick Shmyrev" className="bio-image"/>
         <div className="bio">
           <h3 className="text-secondary">Summary</h3>
           <p>
@@ -20,7 +20,7 @@ const About = () => {
           </p>
         </div>
         {state.jobs.map(job => (
-          <JobComponent job={job} key={uuid()}/>
+          <AboutJob job={job} key={uuid()}/>
         ))}
       </div>
     </main>

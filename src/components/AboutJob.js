@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JobComponent = props => {
+const AboutJob = props => {
   const job = props.job;
   return (
     <div className="job">
@@ -14,4 +14,4 @@ const JobComponent = props => {
   );
 };
 
-export default JobComponent;
+export default AboutJob;
