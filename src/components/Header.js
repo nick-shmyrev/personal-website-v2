@@ -6,17 +6,18 @@ class Header extends Component {
     showMenu: false,
   };
   
-  resetNavMenu = () => {
+  toggleNavMenu = () => {
     this.setState(prevState => ({ showMenu: !prevState.showMenu }));
-    window.scrollTo(0, 0);
+    
   };
+  resetWindowPosition = () => { window.scrollTo(0, 0); };
   
   render() {
     return (
       <header>
         <div
           className={`menu-btn ${this.state.showMenu ? 'close' : ''}`}
-          onClick={this.resetNavMenu}
+          onClick={this.toggleNavMenu}
         >
           <div className="btn-line"/>
           <div className="btn-line"/>
@@ -35,7 +36,7 @@ class Header extends Component {
                 to="/"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.resetNavMenu}
+                onClick={() => { this.toggleNavMenu(); this.resetWindowPosition(); }}
               >
                 Home
               </NavLink>
@@ -45,7 +46,7 @@ class Header extends Component {
                 to="/about"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.resetNavMenu}
+                onClick={() => { this.toggleNavMenu(); this.resetWindowPosition(); }}
               >
                 About Me
               </NavLink>
@@ -55,7 +56,7 @@ class Header extends Component {
                 to="/portfolio"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.resetNavMenu}
+                onClick={() => { this.toggleNavMenu(); this.resetWindowPosition(); }}
               >
                 Examples of My Work
               </NavLink>
@@ -65,7 +66,7 @@ class Header extends Component {
                 to="/contact"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.resetNavMenu}
+                onClick={() => { this.toggleNavMenu(); this.resetWindowPosition(); }}
               >
                 Contact Me
               </NavLink>
