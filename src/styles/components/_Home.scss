@@ -13,7 +13,7 @@
     &:hover {
       cursor: pointer;
       color: $secondary-color;
-      @include easeOut;
+      @include easeIn;
     }
   }
 }
