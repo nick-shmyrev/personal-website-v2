@@ -53,7 +53,7 @@ const data = {
       name: 'A New Project',
       description: 'Maybe yours?',
       img: require('../img/portfolio-images/placeholder_project.jpg'),
-      url: '',
+      url: '/contact',
       git: '',
     },
   ],

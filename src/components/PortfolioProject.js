@@ -14,9 +14,11 @@ const PortfolioProject = (props) => {
           <p>{project.description}</p>
         </span>
       </a>
-      <a href={project.git ? project.git : '#'} className="btn btn-dark" target="_blank">
-        <FontAwesomeIcon icon={faGithub} className="fab"/> GitHub
-      </a>
+      {!!project.git && (
+        <a href={project.git} className="btn btn-dark" target="_blank">
+          <FontAwesomeIcon icon={faGithub} className="fab"/> GitHub
+        </a>
+      )}
     </div>
   );
 };
