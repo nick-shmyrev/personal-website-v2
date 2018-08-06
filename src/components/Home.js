@@ -5,7 +5,7 @@ import { faGithub, faLinkedin, faGitlab } from '@fortawesome/free-brands-svg-ico
 const Home = () => (
   <main id="home">
     <h1 className="lg-heading">Nick <span className="text-secondary">Shmyrev</span></h1>
-    <h2 className="sm-heading">Front-End Developer | Bringing ideas to life, one line of code at a time</h2>
+    <h2 className="sm-heading">Front-End Developer | Bringing&nbsp;ideas to life, one line of code at a time</h2>
     
     <div className="social-icons">
       <a href="https://www.linkedin.com/in/nickshmyrev/" target="_blank" rel="noopener noreferrer" className="icons">
