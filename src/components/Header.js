@@ -6,8 +6,9 @@ class Header extends Component {
     showMenu: false,
   };
   
-  toggleMenu = () => {
+  resetNavMenu = () => {
     this.setState(prevState => ({ showMenu: !prevState.showMenu }));
+    window.scrollTo(0, 0);
   };
   
   render() {
@@ -15,7 +16,7 @@ class Header extends Component {
       <header>
         <div
           className={`menu-btn ${this.state.showMenu ? 'close' : ''}`}
-          onClick={this.toggleMenu}
+          onClick={this.resetNavMenu}
         >
           <div className="btn-line"/>
           <div className="btn-line"/>
@@ -34,7 +35,7 @@ class Header extends Component {
                 to="/"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.toggleMenu}
+                onClick={this.resetNavMenu}
               >
                 Home
               </NavLink>
@@ -44,7 +45,7 @@ class Header extends Component {
                 to="/about"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.toggleMenu}
+                onClick={this.resetNavMenu}
               >
                 About Me
               </NavLink>
@@ -54,7 +55,7 @@ class Header extends Component {
                 to="/portfolio"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.toggleMenu}
+                onClick={this.resetNavMenu}
               >
                 Examples of My Work
               </NavLink>
@@ -64,7 +65,7 @@ class Header extends Component {
                 to="/contact"
                 className="nav-link"
                 activeClassName="nav-link--active"
-                onClick={this.toggleMenu}
+                onClick={this.resetNavMenu}
               >
                 Contact Me
               </NavLink>
