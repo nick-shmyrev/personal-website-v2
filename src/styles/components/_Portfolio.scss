@@ -7,7 +7,7 @@
     width: 100%;
     border: .2rem solid setContrastingColor($primary-color);
     background-color: setContrastingColor($primary-color);
-    @include easeOut;
+    @include easeIn;
     
     &:hover {
       opacity: .8;
@@ -20,7 +20,7 @@
   display: block;
   padding: .5rem 1rem;
   margin-bottom: .3rem;
-  @include easeOut;
+  @include easeIn;
   
   &.btn-light {
     color: #333;

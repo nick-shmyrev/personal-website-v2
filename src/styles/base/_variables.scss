@@ -9,8 +9,8 @@ $bg-opacity: .9;
 $footer-height: 3rem;
 
 // Mixins
-@mixin easeOut {
-  transition: all .25s ease-out;
+@mixin easeIn {
+  transition: all .25s ease-in;
 }
 @mixin bgMixin {
   @if $show-home-bg-image {

@@ -10,14 +10,14 @@ header {
   right: 2rem;
   top: 2rem;
   cursor: pointer;
-  @include easeOut;
+  @include easeIn;
   
   .btn-line {
     background-color: setContrastingColor($primary-color);
     height: .2rem;
     width: 2rem;
     margin-bottom: .3rem;
-    @include easeOut;
+    @include easeIn;
     &:last-child {
       margin-bottom: 0;
     }
@@ -65,7 +65,7 @@ header {
   background: rgba($primary-color, 1);
   position: relative;
   top: 100vh;
-  @include easeOut;
+  @include easeIn;
   &.show {
     transform: translateY(-100%);
   }
@@ -86,7 +86,7 @@ header {
   list-style: none;
   position: relative;
   bottom: 100vh;
-  @include easeOut;
+  @include easeIn;
   &.show {
     transform: translateY(100%);
   }
@@ -101,7 +101,7 @@ header {
   text-decoration: none;
   padding: 1rem 0;
   transform: translateX(600px);
-  @include easeOut;
+  @include easeIn;
   &.show {
     transform: translateX(0);
   }

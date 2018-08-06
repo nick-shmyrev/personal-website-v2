@@ -31,7 +31,7 @@ main {
   min-height: calc(100vh - #{$footer-height});
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: 400;
 }
@@ -57,7 +57,7 @@ a {
   
   &:hover {
     color: $secondary-color;
-    @include easeOut;
+    @include easeIn;
   }
 }
 
