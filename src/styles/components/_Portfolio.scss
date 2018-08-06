@@ -3,16 +3,61 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: .7rem;
   
+}
+.project-image {
+  position: relative;
+  display: block;
+  margin-bottom: .3rem;
+  border: .2rem solid setContrastingColor($primary-color);
+  background-color: setContrastingColor($primary-color);
+  font-size: 0;
+  @include easeIn;
+  &:hover {
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+  }
+  
   img {
     width: 100%;
-    border: .2rem solid setContrastingColor($primary-color);
-    background-color: setContrastingColor($primary-color);
+  }
+  
+  .overlay {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(darken($primary-color, 5), .8);
+    font-size: 1rem;
+    color: setContrastingColor($primary-color);
+    text-align: center;
     @include easeIn;
     
-    &:hover {
-      opacity: .8;
-      border-color: $secondary-color;
+    h4 {
+      font-size: 1.35rem;
+      margin-bottom: .3rem;
+      &:after {
+        content: '';
+        display: block;
+        position: relative;
+        top: .3rem;
+        width: 70%;
+        height: 1px;
+        margin: 0 auto;
+        background-color: setContrastingColor($primary-color);
+      }
     }
+    p {
+      margin: .3rem 0 0;
+      font-style: italic;
+    }
+  }
+  &:hover .overlay {
+    opacity: 1;
   }
 }
 
@@ -23,11 +68,11 @@
   @include easeIn;
   
   &.btn-light {
-    color: #333;
+    color: lighten($dark-color, 3);
     background-color: lighten($primary-color, 50);
   }
   &.btn-dark {
-    color: #fff;
+    color: $light-color;
     background-color: darken($primary-color, 50);
   }
   &:hover {
