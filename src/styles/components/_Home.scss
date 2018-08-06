@@ -17,3 +17,9 @@
     }
   }
 }
+
+@include mediaMD {
+  #home h1 {
+    margin-top: 10vh;
+  }
+}
