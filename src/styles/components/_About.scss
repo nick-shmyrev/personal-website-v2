@@ -20,7 +20,7 @@
   font-size: 1.5rem;
 }
 .job {
-  background-color: lighten($primary-color, 5);
+  background-color: desaturate(lighten($primary-color, 10), 100);
   padding: 1rem;
   border-bottom: .3rem solid $secondary-color;
   text-align: left;

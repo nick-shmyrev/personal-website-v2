@@ -1,6 +1,41 @@
 // Colors
+
+ /* BASE COLOR SCHEME */
 $primary-color: #444;
 $secondary-color: #eece1a;
+$tertiary-color: #74150f;
+$dark-color: #000;
+$light-color: #fff;
+
+/* COLOR THEMES */
+
+/* DARK-NAVY TANGERINE */
+// https://www.canva.com/learn/wp-content/uploads/2015/06/color-combo-16-tb-752x0.png
+$primary-color: desaturate(lighten(#011A27, 15), 90);
+$secondary-color: lighten(#F0810F, 15);
+
+/* DEEP-PURPLE BLUSH */
+// https://www.canva.com/learn/wp-content/uploads/2015/06/color-combo-19-tb-752x0.png
+//$primary-color: #363237;
+//$secondary-color: #D09683;
+
+/* SLATE LATTE */
+// https://www.canva.com/learn/wp-content/uploads/2015/06/color-combo-26-tb-752x0.png
+//$primary-color: darken(#626D71,15);
+//$secondary-color: #DDBC95;
+
+/* STONEGROUND LAPIS */
+// https://www.canva.com/learn/wp-content/uploads/2015/06/color-combo-49-tb-752x0.png
+//$primary-color: #4B4345;
+//$secondary-color: lighten(#556DAC, 15);
+
+/* MIDNIGHT-BLUE GOLDEN */
+// https://www.canva.com/learn/wp-content/uploads/2015/06/color-combo-62-tb-752x0.png
+//$primary-color: lighten(desaturate(#16253D, 40), 15);
+//$secondary-color: lighten(#EFB509, 5);
+
+
+// Variables
 $show-home-bg-image: true;
 $home-bg-image: url('../img/background.jpg');
 $bg-opacity: .9;
@@ -14,20 +49,18 @@ $footer-height: 3rem;
 }
 @mixin bgMixin {
   @if $show-home-bg-image {
-    background: $home-bg-image;
-    background-attachment: fixed;
+    background: $home-bg-image fixed no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
-// Font Color Function
+// Functions
 @function setContrastingColor($color) {
   @if (lightness($color) > 40) {
-    @return #000;
+    @return $dark-color;
   }
   @else {
-    @return #fff;
+    @return $light-color;
   }
 }
 
