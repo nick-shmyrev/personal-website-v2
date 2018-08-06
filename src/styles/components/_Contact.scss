@@ -1,0 +1,64 @@
+.contact-badge {
+  max-width: 680px;
+  margin: 8rem auto 0;
+  border: .2rem solid setContrastingColor($primary-color);
+  background-color: darken($primary-color, 10);
+  padding: 1.5rem 2.5rem;
+  
+  .flex-row {
+    display: flex;
+  }
+  hr {
+    border-color: $secondary-color;
+  }
+  .avatar {
+    background-image: url('../img/avatar.jpeg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-right: 2rem;
+    border-radius: 50%;
+    min-width: 160px;
+    height: 160px;
+    border: .3rem solid $secondary-color;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+  .btn-linkedin {
+    display: block;
+    padding: 1rem 2rem;
+    max-width: 280px;
+    margin: 3rem 0 0 auto;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #0073b1;
+    @include easeIn;
+    svg {
+      font-size: 1.75rem;
+    }
+    &:hover {
+      background-color: #006097;
+      color: #fff;
+    }
+  }
+}
+
+@include mediaMD {
+  .contact-badge {
+    .avatar {
+      margin: 0 0 1.5rem 0;
+    }
+    .flex-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-linkedin {
+      margin: 2rem auto 0;
+    }
+  }
+}
