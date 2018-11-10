@@ -2,9 +2,19 @@ const data = {
   jobs: [
     {
       title: 'Front-End Developer',
-      companyName: 'NewCompany',
+      companyName: '<a href="https://vestrainet.com/" target="_blank" rel="noopener noreferrer">Vestra Inet</a>',
       dates: '2018 - Present',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa esse ipsa placeat praesentium. Aperiam atque aut beatae consequatur, consequuntur dignissimos, doloribus natus obcaecati, officiis pariatur quasi reiciendis tenetur velit!',
+      description: 'Developed custom websites for a wide range of clients. Integrated websites Front-end with Vestranet CMS. <br>' +
+        'Collaborated with design team to develop complex and responsive layouts that are optimized for any screen size, mobile device, and browser.<br>' +
+        'Performed manual testing, investigated bug reports and implemented bug and performance fixes.<br>' +
+        '<br>' +
+        'Technologies: HTML5, CSS3, SASS, Javascript, jQuery, LAMP stack (Linux, Apache, MySQL, PHP) and Vestranet CMS.<br>' +
+        'Software: PhpStorm, Git, Avocode, Adode Photoshop & Illustrator.<br>' +
+        'Examples of my work: <br>' +
+        '● <a href="http://grandeurflooring.vestranet.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
+        '● <a href="http://plmetal.vestranet.com" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
+        '● <a href="http://hitechrenoservices.com" target="_blank" rel="noopener noreferrer">Hi Tech Reno Services</a><br>' +
+        '● <a href="http://df.vestranet.com" target="_blank" rel="noopener noreferrer">Destination Furniture</a>',
     },
     {
       title: 'Web Developer Mentor',
