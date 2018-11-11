@@ -6,7 +6,7 @@ const data = {
       dates: '2018 - Present',
       description: 'Developed custom websites for a wide range of clients. Integrated websites Front-end with Vestranet CMS. <br>' +
         'Collaborated with design team to develop complex and responsive layouts that are optimized for any screen size, mobile device, and browser.<br>' +
-        'Performed manual testing, investigated bug reports and implemented bug and performance fixes.<br>' +
+        'Performed manual testing, investigated bug reports and implemented bugfixes and performance tweaks.<br>' +
         '<br>' +
         'Technologies: HTML5, CSS3, SASS, Javascript, jQuery, LAMP stack (Linux, Apache, MySQL, PHP) and Vestranet CMS.<br>' +
         'Software: PhpStorm, Git, Avocode, Adode Photoshop & Illustrator.<br>' +
