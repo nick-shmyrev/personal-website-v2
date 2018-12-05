@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "yarn run clean && NODE_ENV=development webpack-dev-server",
-    "build": "yarn run clean && NODE_ENV=production webpack",
+    "build": "yarn run clean && NODE_ENV=production webpack -p",
     "deploy": "yarn run build && surge ./dist --domain nick-shmyrev.surge.sh && yarn run clean"
   },
   "dependencies": {

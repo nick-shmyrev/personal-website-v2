@@ -2,9 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production';
+const isProduction = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+  mode: isProduction ? 'production' : 'development',
   entry: './src/index.js',
   module: {
     rules: [
@@ -19,7 +20,7 @@ module.exports = {
         test: /\.(s?[ac]ss)$/,
         exclude: /node_modules/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           { loader: 'css-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
@@ -58,7 +59,7 @@ module.exports = {
       },
     ],
   },
-  devtool: 'source-map',
+  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
