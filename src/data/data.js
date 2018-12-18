@@ -14,7 +14,7 @@ const data = {
         '● <a href="http://grandeurflooring.vestranet.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
         '● <a href="http://plmetal.vestranet.com" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
         '● <a href="http://hitechrenoservices.com" target="_blank" rel="noopener noreferrer">Hi Tech Reno Services</a><br>' +
-        '● <a href="http://df.vestranet.com" target="_blank" rel="noopener noreferrer">Destination Furniture</a>',
+        '● <a href="http://destinationfurniture.net" target="_blank" rel="noopener noreferrer">Destination Furniture</a>',
     },
     {
       title: 'Web Developer Mentor',
