@@ -10,10 +10,11 @@ const data = {
         '<br>' +
         'Technologies: HTML5, CSS3, SASS, Javascript, jQuery, LAMP stack (Linux, Apache, MySQL, PHP) and Vestranet CMS.<br>' +
         'Software: PhpStorm, Git, Avocode, Adode Photoshop & Illustrator.<br>' +
-        'Examples of my work: <br>' +
+        'Examples of my work: <br><br>' +
         '● <a href="http://grandeurflooring.vestranet.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
-        '● <a href="http://plmetal.vestranet.com" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
+        '● <a href="http://plmetal.ca" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
         '● <a href="http://hitechrenoservices.com" target="_blank" rel="noopener noreferrer">Hi Tech Reno Services</a><br>' +
+        '● <a href="http://formtechscientific.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
         '● <a href="http://destinationfurniture.net" target="_blank" rel="noopener noreferrer">Destination Furniture</a>',
     },
     {
@@ -58,6 +59,36 @@ const data = {
       img: require('../img/portfolio-images/portfolio.jpg'),
       url: 'https://nick-shmyrev.surge.sh',
       git: 'https://github.com/nick-shmyrev/personal-website-v2',
+    },
+    {
+      name: 'PL Metal Fabrication',
+      description: 'Local Business',
+      img: require('../img/portfolio-images/plmetal.jpg'),
+      url: 'http://plmetal.ca/',
+    },
+    {
+      name: 'Hi Tech Reno Services',
+      description: 'Local Business',
+      img: require('../img/portfolio-images/htr.jpg'),
+      url: 'https://hitechrenoservices.com/',
+    },
+    {
+      name: 'Destination Furniture',
+      description: 'Local Business',
+      img: require('../img/portfolio-images/df.jpg'),
+      url: 'http://destinationfurniture.net/',
+    },
+    {
+      name: 'Form Tech Scientific',
+      description: 'Local Business',
+      img: require('../img/portfolio-images/fts.jpg'),
+      url: 'https://formtechscientific.com/',
+    },
+    {
+      name: 'Grandeur Flooring',
+      description: 'Local Business',
+      img: require('../img/portfolio-images/grandeur.jpg'),
+      url: 'http://grandeurflooring.vestranet.com/',
     },
     {
       name: 'A New Project',
