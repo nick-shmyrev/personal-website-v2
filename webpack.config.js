@@ -69,8 +69,8 @@ module.exports = {
       template: './src/index.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: '200.html',
+      template: './src/404.html',
+      filename: '404.html',
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -80,7 +80,7 @@ module.exports = {
   ],
   output: {
     publicPath: '/',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'js/bundle.js',
   },
 };

@@ -8,8 +8,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "yarn run clean && NODE_ENV=development webpack-dev-server",
-    "build": "yarn run clean && NODE_ENV=production webpack -p",
-    "deploy": "yarn run build && surge ./dist --domain nick-shmyrev.surge.sh && yarn run clean"
+    "build": "yarn run clean && NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
@@ -43,7 +42,6 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
-    "surge": "^0.20.1",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"

@@ -2,4 +2,4 @@
 Personal Website project. Build with SASS, React & React-Router
 
 ## See it in action
-<a href="https://nick-shmyrev.surge.sh/" target="_blank">Click me!</a>
+<a href="https://nick-shmyrev.dev/" target="_blank">Click me!</a>

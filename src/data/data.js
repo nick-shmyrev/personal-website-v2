@@ -57,7 +57,7 @@ const data = {
       name: 'Portfolio',
       description: 'This Website',
       img: require('../img/portfolio-images/portfolio.jpg'),
-      url: 'https://nick-shmyrev.surge.sh',
+      url: 'https://nick-shmyrev.dev',
       git: 'https://github.com/nick-shmyrev/personal-website-v2',
     },
     {
