@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isProduction = process.env.NODE_ENV !== 'production';
@@ -68,10 +69,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
-    new HtmlWebpackPlugin({
-      template: './src/404.html',
-      filename: '404.html',
-    }),
+    new CopyPlugin([
+      { from: './src/404.html' },
+      { from: './src/CNAME' },
+    ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional

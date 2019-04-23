@@ -6,7 +6,7 @@
   "author": "Nick Shmyrev <nr.shmyrev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf docs",
     "dev": "yarn run clean && NODE_ENV=development webpack-dev-server",
     "build": "yarn run clean && NODE_ENV=production webpack -p"
   },
@@ -28,6 +28,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.2",
     "css-loader": "^1.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "16.1.0",
