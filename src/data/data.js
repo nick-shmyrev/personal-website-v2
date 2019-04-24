@@ -4,17 +4,16 @@ const data = {
       title: 'Front-End Developer',
       companyName: '<a href="https://vestrainet.com/" target="_blank" rel="noopener noreferrer">Vestra Inet</a>',
       dates: '2018 - Present',
-      description: 'Developed custom websites for a wide range of clients. Integrated websites Front-end with Vestranet CMS. <br>' +
-        'Collaborated with design team to develop complex and responsive layouts that are optimized for any screen size, mobile device, and browser.<br>' +
-        'Performed manual testing, investigated bug reports and implemented bugfixes and performance tweaks.<br>' +
+      description: 'Developed front-end for 9 projects from PSD/AI/XD graphic mock-ups and designed responsive styles (using CSS media queries) for resolutions up to 320*568px (iPhone 5). <br>' +
+        ' Implemented CMS functionality for 5 projects. Collaborated with Back-End Developers to integrate e-commerce projects with Vestranet CMS and design Back-end APIs.<br>' +
+        ' Automated image optimization and SASS->CSS compilation tasks using Gulp. Performed manual testing, investigated bug reports and implemented bugfixes for front and back-end related issues.<br>' +
         '<br>' +
         'Technologies: HTML5, CSS3, SASS, Javascript, jQuery, LAMP stack (Linux, Apache, MySQL, PHP) and Vestranet CMS.<br>' +
         'Software: PhpStorm, Git, Avocode, Adode Photoshop & Illustrator.<br>' +
         'Examples of my work: <br><br>' +
         '● <a href="http://grandeurflooring.vestranet.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
         '● <a href="http://plmetal.ca" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
-        '● <a href="http://hitechrenoservices.com" target="_blank" rel="noopener noreferrer">Hi Tech Reno Services</a><br>' +
-        '● <a href="http://formtechscientific.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
+        '● <a href="http://formtechscientific.com" target="_blank" rel="noopener noreferrer">Form Tech Scientific</a><br>' +
         '● <a href="http://destinationfurniture.net" target="_blank" rel="noopener noreferrer">Destination Furniture</a>',
     },
     {
