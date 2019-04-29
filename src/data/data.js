@@ -32,11 +32,11 @@ const data = {
   ],
   projects: [
     {
-      name: 'Sedona',
-      description: 'Travel Destination',
-      img: require('../img/portfolio-images/sedona.jpg'),
-      url: 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/Nick-Shmyrev/sedona/master/index.html',
-      git: 'https://github.com/nick-shmyrev/sedona',
+      name: 'Hatchways Test',
+      description: 'Frontend Assessment',
+      img: require('../img/portfolio-images/hatchways-front.jpg'),
+      url: 'http://quack-support.surge.sh',
+      git: 'https://github.com/nick-shmyrev/frontend-assessment',
     },
     {
       name: 'Indecision',
@@ -46,11 +46,11 @@ const data = {
       git: 'https://github.com/nick-shmyrev/indecision-app',
     },
     {
-      name: 'Borodinski',
-      description: 'Barbershop',
-      img: require('../img/portfolio-images/borodinski.jpg'),
-      url: 'https://htmlpreview.github.io/?https://github.com/Nick-Shmyrev/22749-barbershop/blob/master/index.html',
-      git: 'https://github.com/nick-shmyrev/22749-barbershop',
+      name: 'Expensify',
+      description: 'Personal finances app',
+      img: require('../img/portfolio-images/expensify.jpg'),
+      url: 'https://radiant-temple-62692.herokuapp.com',
+      git: 'https://github.com/nick-shmyrev/expensify-app',
     },
     {
       name: 'Portfolio',
