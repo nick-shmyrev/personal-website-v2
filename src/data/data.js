@@ -3,7 +3,7 @@ const data = {
     {
       title: 'Front-End Developer',
       companyName: '<a href="https://vestrainet.com/" target="_blank" rel="noopener noreferrer">Vestra Inet</a>',
-      dates: '2018 - Present',
+      dates: '2018 - 2018',
       description: 'Developed front-end for 9 projects from PSD/AI/XD graphic mock-ups and designed responsive styles (using CSS media queries) for resolutions up to 320*568px (iPhone 5). <br>' +
         ' Implemented CMS functionality for 5 projects. Collaborated with Back-End Developers to integrate e-commerce projects with Vestranet CMS and design Back-end APIs.<br>' +
         ' Automated image optimization and SASS->CSS compilation tasks using Gulp. Performed manual testing, investigated bug reports and implemented bugfixes for front and back-end related issues.<br>' +
