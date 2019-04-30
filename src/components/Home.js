@@ -11,9 +11,6 @@ const Home = () => (
       <a href="https://www.linkedin.com/in/nickshmyrev/" target="_blank" rel="noopener noreferrer" className="icons">
         <FontAwesomeIcon icon={faLinkedin} className="fa-3x fa-fw"/>
       </a>
-      <a href="https://gitlab.com/nick-shmyrev" target="_blank" rel="noopener noreferrer" className="icons">
-        <FontAwesomeIcon icon={faGitlab} className="fa-3x fa-fw"/>
-      </a>
       <a href="https://github.com/nick-shmyrev" target="_blank" rel="noopener noreferrer" className="icons">
         <FontAwesomeIcon icon={faGithub} className="fa-3x fa-fw"/>
       </a>

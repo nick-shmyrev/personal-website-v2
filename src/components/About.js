@@ -16,7 +16,7 @@ const About = () => {
         <div className="bio">
           <h3 className="text-secondary">Summary</h3>
           <p>
-            Web Developer focusing on Front-End Development. Well versed in several programming languages including JavaScript and PHP, SQL and NoSQL databases, and front-end frameworks including React and Vue.js.
+            Creative Front-End Developer with 2+ years of professional experience and a strong background in Graphic Arts & Print Production. Passionate about creating responsive and&nbsp;easy to use UI’s and writing clean and eloquent code.
           </p>
         </div>
         {state.jobs.map(job => (

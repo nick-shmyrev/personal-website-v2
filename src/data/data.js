@@ -20,14 +20,14 @@ const data = {
       title: 'Web Developer Mentor',
       companyName: 'Fanshawe College',
       dates: '2017 - 2018',
-      description: 'Mentored IT students on programming concepts ( with JavaScript, jQuery, PHP ), databases ( Oracle SQL, MySQL ), web design fundamentals ( HTML, CSS, Adobe Photoshop, Illustrator ) and version control ( Git ). \n' +
-        'Performed in-person and online code-review sessions with students. Taught troubleshooting, debugging and workflow optimization techniques.',
+      description: 'Volunteered as a peer mentor for web development students. Assisted with their weekly learning goals and assignments. Reviewed fundamental concepts and methodologies in HTML & CSS, Javascript, jQuery, PHP, Oracle SQL & MySQL, Git. Taught students Adobe Photoshop & Illustrator best practices and techniques.<br>' +
+        'Performed code-review sessions, taught troubleshooting, debugging and general workflow optimization techniques.',
     },
     {
       title: 'Jr. Front-End Developer',
       companyName: 'Phone-Market.ru',
       dates: '2015 - 2016',
-      description: 'Created new and updated existing landing and product pages using HTML, CSS, JavaScript and Bitrix CMS. Prepared product images for publication using Adobe Photoshop and Illustrator. Wrote product descriptions and reviews.',
+      description: 'Created new and updated existing landing and product pages using HTML, CSS, JavaScript, jQuery and Bitrix CMS. Prepared product images for publication using Adobe Photoshop and Illustrator. Wrote product descriptions and reviews.',
     },
   ],
   projects: [
