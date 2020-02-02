@@ -16,7 +16,9 @@ const About = () => {
         <div className="bio">
           <h3 className="text-secondary">Summary</h3>
           <p>
-            Creative Front-End Developer with 2+ years of professional experience and a strong background in Graphic Arts & Print Production. Passionate about creating responsive and&nbsp;easy to use UI’s and writing clean and eloquent code.
+            Creative Full Stack Developer in love with modern Javascript.  Passionate about creating responsive and easy to use UI’s and writing clean and efficient code.
+            Strong background in Graphic Arts & Print Production and extensive experience working with various graphics editors, following brandbooks/styleguides and juggling multiple projects with tight deadlines.
+
           </p>
         </div>
         {state.jobs.map(job => (

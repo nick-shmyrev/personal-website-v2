@@ -1,6 +1,15 @@
 const data = {
   jobs: [
     {
+      title: 'Full Stack Software Developer',
+      companyName: 'Housescope',
+      dates: '2019 - Present',
+      description: 'Developing a live webapp for medical physicists that collects radiation data from imaging equipment, ' +
+        'performs automatic protocol mapping and provides analytics on hospital performance and compliance with radiation standards.<br>' +
+        '<br>' +
+        'Technologies: Javascript, Blaze + Meteor.js, MongoDB',
+    },
+    {
       title: 'Front-End Developer',
       companyName: '<a href="https://vestrainet.com/" target="_blank" rel="noopener noreferrer">Vestra Inet</a>',
       dates: '2018 - 2018',
@@ -10,7 +19,8 @@ const data = {
         '<br>' +
         'Technologies: HTML5, CSS3, SASS, Javascript, jQuery, LAMP stack (Linux, Apache, MySQL, PHP) and Vestranet CMS.<br>' +
         'Software: PhpStorm, Git, Avocode, Adode Photoshop & Illustrator.<br>' +
-        'Examples of my work: <br><br>' +
+        '<br>' +
+        'Examples of my work: <br>' +
         '● <a href="http://grandeurflooring.vestranet.com" target="_blank" rel="noopener noreferrer">Grandeur Flooring</a><br>' +
         '● <a href="http://plmetal.ca" target="_blank" rel="noopener noreferrer">PL Metal Fabrication</a><br>' +
         '● <a href="http://formtechscientific.com" target="_blank" rel="noopener noreferrer">Form Tech Scientific</a><br>' +
@@ -22,12 +32,6 @@ const data = {
       dates: '2017 - 2018',
       description: 'Volunteered as a peer mentor for web development students. Assisted with their weekly learning goals and assignments. Reviewed fundamental concepts and methodologies in HTML & CSS, Javascript, jQuery, PHP, Oracle SQL & MySQL, Git. Taught students Adobe Photoshop & Illustrator best practices and techniques.<br>' +
         'Performed code-review sessions, taught troubleshooting, debugging and general workflow optimization techniques.',
-    },
-    {
-      title: 'Jr. Front-End Developer',
-      companyName: 'Phone-Market.ru',
-      dates: '2015 - 2016',
-      description: 'Created new and updated existing landing and product pages using HTML, CSS, JavaScript, jQuery and Bitrix CMS. Prepared product images for publication using Adobe Photoshop and Illustrator. Wrote product descriptions and reviews.',
     },
   ],
   projects: [
@@ -70,12 +74,6 @@ const data = {
       description: 'Local Business',
       img: require('../img/portfolio-images/htr.jpg'),
       url: 'https://hitechrenoservices.com/',
-    },
-    {
-      name: 'Destination Furniture',
-      description: 'Local Business',
-      img: require('../img/portfolio-images/df.jpg'),
-      url: 'http://destinationfurniture.net/',
     },
     {
       name: 'Form Tech Scientific',
